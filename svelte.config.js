@@ -1,5 +1,6 @@
-import adapterStatic from "@sveltejs/adapter-static";
-import sveltePreprocess from "svelte-preprocess";
+import adapter from "@sveltejs/adapter-node";
+// import adapterStatic from "@sveltejs/adapter-static";
+import { sveltePreprocess } from "svelte-preprocess";
 import autoprefixer from "autoprefixer";
 
 const preprocess = sveltePreprocess({
@@ -11,7 +12,8 @@ const preprocess = sveltePreprocess({
 const config = {
 	preprocess,
 	kit: {
-		adapter: adapterStatic({ strict: false })
+		adapter: adapter()
+		// adapter: adapterStatic({ strict: false })
 	},
 	vitePlugin: {
 		// experimental: {

@@ -40,7 +40,7 @@
 
 <!-- <Header /> -->
 <div
-	class="word-container overflow-hidden absolute inset-0 flex flex-wrap content-start p-2 opacity-30 md:p-4 z-0"
+	class="word-container bg-base-100 text-sky-600 overflow-hidden absolute inset-0 flex flex-wrap content-start p-2 md:p-4 opacity-30"
 >
 	{@html sizedFullText}
 </div>

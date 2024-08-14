@@ -2,7 +2,6 @@
 	import "../app.css";
 	import "$styles/app.css";
 	import Header from "$components/Header.svelte";
-	import "../app.css";
 
 	const specialWords = [
 		{ text: "idiot", size: "text-6xl md:text-8xl" },

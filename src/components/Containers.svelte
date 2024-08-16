@@ -133,7 +133,7 @@
 							<div class="max-w-md space-y-4 relative">
 								<h1 class="text-5xl font-bold">Am I an Idiot?</h1>
 								<p class="py-6">
-									In ancient Greece, the term "idiot" (ἰδιώτης, idiōtēs) had a
+									In ancient Greece, the term "idiot" had a
 									very different meaning from what it does today. If you would
 									like to learn more about the history of the word "idiot" and
 									its meaning, click the button below.
@@ -227,15 +227,15 @@
 									</div>
 								{/if}
 								<button
-									class="btn btn-primary w-full"
+									class="btn btn-primary w-[98%] ml-3"
 									on:click={moveSecondContainerUp}>Learn More</button
 								>
 								<button
-									class="btn btn-secondary w-full"
+									class="btn btn-secondary w-[98%] ml-3"
 									on:click={moveSecondContainerDown}>I'm Ready</button
 								>
 								<button
-									class="btn btn-outline w-full"
+									class="btn btn-outline w-[98%] ml-3"
 									on:click={hideMenu}>Go Back</button
 								>
 							</div>
@@ -263,7 +263,7 @@
 								></div>
 							</div>
 						{:else if showQuiz}
-							<Quiz {questions} numQuestions={1} timeLimit={6} />
+							<Quiz {questions} numQuestions={25} timeLimit={6} />
 						{/if}
 					</div>
 				</div>
